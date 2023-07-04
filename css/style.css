@@ -199,11 +199,16 @@ main {
 
 .banner-content h1 {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1em;
   margin-top: 20px;
   margin-bottom: 20px;
+  line-height: 2.25rem;
+}
+
+.banner-content h1 span {
+  color: #04091e;
 }
 
 .banner-content p {
