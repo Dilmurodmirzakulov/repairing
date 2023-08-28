@@ -5974,6 +5974,19 @@ a.close.disabled {
   width: 100%;
   overflow: hidden;
 }
+
+.carousel-inner {
+  animation: scaleAnimation 2s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
 .carousel-inner::after {
   display: block;
   clear: both;
