@@ -208,7 +208,7 @@ main {
 }
 
 .banner-content h1 span {
-  color: #04091e;
+  color: #f43d6a;
 }
 
 .banner-content p {
@@ -750,7 +750,7 @@ footer {
   text-align: center;
 }
 
-.es-stats-ic{
+.es-stats-ic {
   margin-bottom: 1.5rem;
 }
 
@@ -765,4 +765,111 @@ footer {
 
 .all-day-ic {
   height: 3rem;
+}
+
+.es-fixed-contacts {
+  position: fixed;
+  bottom: 40px !important;
+  right: 50px !important;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.es-fixed-contact img {
+  width: 50px;
+}
+
+.es-fixed-phone {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  background-color: #8890ff75;
+  padding-right: 20px;
+  border-radius: 50px;
+}
+
+.es-fixed-phone img {
+  margin-right: 20px;
+}
+
+.trin-trin {
+  animation-name: trin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes trin {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20%,
+  32%,
+  44%,
+  56%,
+  68% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%,
+  35%,
+  47%,
+  59%,
+  71% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  26%,
+  38%,
+  50%,
+  62%,
+  74% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  29%,
+  41%,
+  53%,
+  65%,
+  77% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.call-animation {
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: solid 1px #fff;
+  animation: play 2s ease infinite;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.es-fixed-tg:hover {
+  transform: scale(1.1);
+}
+
+@keyframes play {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    box-shadow: 0 0 0 3px #8890ffcc;
+  }
+  25% {
+    box-shadow: 0 0 0 6px #8890ffcc,
+      0 0 0 12px #8890ff93;
+  }
+  25% {
+    box-shadow: 0 0 0 7.5px #8890ffcc,
+      0 0 0 15px #8890ff93;
+  }
 }
