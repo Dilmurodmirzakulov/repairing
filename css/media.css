@@ -1,0 +1,52 @@
+@media (min-width: 1440px){
+  .container {
+    max-width: 1400px !important;
+  }
+}
+
+@media (max-width: 768px){
+  body, html{
+    overflow-x: hidden !important;
+  }
+  .banner-content {
+    padding-top: 3.125rem;
+  }
+  .carousel-item img {
+    height: 300px;
+  }
+  .es-row-img {
+    position: relative;
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .es-row-img img {
+    width: 100%;
+  }
+  .es-page-row {
+    flex-direction: column;
+    padding: 0;
+  }
+  .banner-area.es-section{
+    height: 800px;
+  }
+  .es-footer-top {
+    flex-direction: column;
+  }
+  .es-footer-logo-column, .es-section {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .es-footer-contacts-column {
+    width: 100%;
+    text-align: left;
+  }
+  .es-footer-top-container {
+    padding: 3.125rem 0;
+  }
+  .es-footer-socials {
+    justify-content: start;
+}
+.es-cover-img-section {
+  padding: 5rem 0;
+}
+}
